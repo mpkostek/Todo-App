@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Master Table View Controller-->
         <scene sceneID="1H3-wU-WGE">
             <objects>
-                <tableViewController id="j79-EL-JUg" sceneMemberID="viewController">
+                <tableViewController id="j79-EL-JUg" customClass="MasterTableViewController" customModule="TodoApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jdl-1y-wmu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="829" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="bGK-e5-aTM">
             <objects>
-                <viewController id="PRo-a1-JyG" sceneMemberID="viewController">
+                <viewController id="PRo-a1-JyG" customClass="DetailViewController" customModule="TodoApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zsa-Hf-alG"/>
                         <viewControllerLayoutGuide type="bottom" id="MFn-h4-X1F"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="829" y="861"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="79b-EW-2Zj">
             <objects>
-                <viewController id="rnF-PE-WrQ" sceneMemberID="viewController">
+                <viewController id="rnF-PE-WrQ" customClass="AddViewController" customModule="TodoApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XaA-WD-iw7"/>
                         <viewControllerLayoutGuide type="bottom" id="2go-xd-rWw"/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVk-hF-tNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="-67"/>
+            <point key="canvasLocation" x="1220" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6n-BM-9pH">
