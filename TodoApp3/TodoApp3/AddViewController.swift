@@ -9,10 +9,11 @@
 import UIKit
 
 class AddViewController: UIViewController {
+
+    @IBOutlet var titleTextField: UITextField! = UITextField()
     
-    @IBOutlet var titleTextField: UITextField!
-    @IBOutlet var notesTextView: UITextView!
-   
+    @IBOutlet var notesTextView: UITextView! = UITextView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +27,10 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(sender: AnyObject) {
-        
+        println("Button Tapped")
         var dataSet:NSMutableDictionary  = NSMutableDictionary()
         dataSet.setObject(titleTextField.text, forKey: "itemTitle")
         dataSet.setObject(notesTextView.text, forKey: "itemNote")
         
     }
-    
-
 }

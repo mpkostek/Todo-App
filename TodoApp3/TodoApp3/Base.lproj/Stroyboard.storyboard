@@ -129,9 +129,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="igB-QC-3CK">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="p1Q-D6-avD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="p1Q-D6-avD">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="rnF-PE-WrQ" id="CcE-aO-bXu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="notesTextView" destination="6tD-Yp-pKb" id="Lgf-aw-kGa"/>
+                        <outlet property="titleTextField" destination="CCr-hL-RVH" id="657-Pm-yvL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVk-hF-tNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
